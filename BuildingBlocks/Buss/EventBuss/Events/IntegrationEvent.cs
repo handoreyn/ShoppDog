@@ -2,7 +2,7 @@
 using System;
 using System.Text.Json.Serialization;
 
-namespace ShopDog.BuildingBlocks.Buss.EventBuss.EventBuss
+namespace ShoppDog.BuildingBlocks.Buss.EventBuss.EventBuss
 {
     public class IntegrationEvent
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace ShopDog.BuildingBlocks.Buss.EventBuss.Extensions
+namespace ShoppDog.BuildingBlocks.Buss.EventBuss.Extensions
 {
     public static class GenericTypeExtensions
     {
