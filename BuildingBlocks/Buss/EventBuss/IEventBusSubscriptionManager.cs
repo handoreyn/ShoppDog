@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using ShoppDog.BuildingBlocks.Buss.EventBuss.Abstractions;
+using ShoppDog.BuildingBlocks.Buss.EventBuss.EventBuss;
 
-namespace ShoppDog.BuildingBlocks.Buss.EventBuss.EventBuss
+namespace ShoppDog.BuildingBlocks.Buss.EventBuss
 {
     public interface IEventBusSubscriptionManager
     {
@@ -24,6 +25,6 @@ namespace ShoppDog.BuildingBlocks.Buss.EventBuss.EventBuss
         void Clear();
         IEnumerable<SubscriptionInfo> GetHandlersForEvent<T>() where T : IntegrationEvent;
         IEnumerable<SubscriptionInfo> GetHandlersForEvent(string eventName);
-        string GetEventKey();
+        string GetEventKey<T>();
     }
 }
