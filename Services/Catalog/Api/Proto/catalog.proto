@@ -17,11 +17,13 @@ message CatalogItemResponse {
     string name = 2;
     string description = 3;
     double price = 4;
+    string picture_file_name = 5;
     string picture_uri = 6;
     CatalogType  catalog_type = 8;
     CatalogBrand catalog_brand = 10;
     int32 available_stock = 11;
     int32 restock_threshold = 12;
+    int32 max_stock_threshold = 13;
     bool on_reorder = 14;
 }
 
